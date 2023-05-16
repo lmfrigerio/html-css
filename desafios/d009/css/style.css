@@ -1,0 +1,41 @@
+body {
+
+    background-color: rgb(59, 57, 57);
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato' sans-serif;
+}
+.thumbContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: center;
+}
+
+.imgContainer {
+    margin: 2px;
+    
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+
+}
+
+.iframe {
+    display: flex;
+   
+    justify-content: center;
+   
+}
+
+.parg {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
