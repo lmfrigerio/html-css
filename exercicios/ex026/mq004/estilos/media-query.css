@@ -12,8 +12,35 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
-@media print {
+@media print {/*IMPRESSÃO*/
+     * {
+        font-family: 'Courier New', Courier, monospace;
+     }
 
+     body {
+        background-image: url(../imagens/back-print.jpg);
+     }
+
+     main {
+        width: 90vw;
+        border: 2px solid black;
+     }
+
+     main::after {
+        content: 'Essa impressão realizada na data:05/06/2023';
+        text-decoration: overline;
+     }
+
+     main h1 {
+        text-shadow: none;
+        color: black;
+     }
+
+     img#cel {display: none;}
+     img#tabl {display: none;}
+     img#print {display: block;}
+     img#pc {display: none;}
+     img#tv {display: none;}
 }
 
 @media screen  and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
@@ -48,6 +75,10 @@ Grandes telas: acima de 1200px
 @media screen  and (min-width: 1200px) {/*GRANDES TELAS*/
     body {
         background-image: url(../imagens/back-tv.jpg);
+     }
+
+     main {
+        width: 700px;
      }
     img#cel {display: none;}
     img#tabl {display: none;}
