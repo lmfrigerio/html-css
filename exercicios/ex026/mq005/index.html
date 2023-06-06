@@ -7,8 +7,9 @@
     <title>Meu Site</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <header>
         <h1>Bíblia On Line</h1>
@@ -70,6 +71,15 @@
     </main>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }else{
+                itens.style.display ='none'
+            }
+
+
+        }
         function clikMenu() {
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
